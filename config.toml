@@ -1,6 +1,7 @@
-baseurl = "https://grahamhenrysmith.com/" # Configure URL. if using gh-pages https://github.com/<username>/hugo-universal-theme URL: https://<username>.github.io/hugo-universal-theme/
+baseurl = "https://grahamships.com/"
 title = "Graham"
 theme = "hugo-universal-theme"
+timeout = "120s"
 themesDir = "./themes"
 languageCode = "en-us"
 # Site language. Available translations in the theme's `/i18n` directory.
@@ -72,49 +73,25 @@ pluralizelisttitles = false
 
 [[menu.topbar]]
     weight = 1
-    name = "Phone"
-    url = "tel:+12 34 567 89 01"
-    pre = "<i class='fas fa-2x fa-phone'></i>"
-
-[[menu.topbar]]
-    weight = 2
     name = "GitHub"
-    url = "https://github.com/devcows/hugo-universal-theme"
+    url = "https://github.com/grahamships"
     pre = "<i class='fab fa-2x fa-github'></i>"
-
-[[menu.topbar]]
-    weight = 3
-    name = "Facebook"
-    url = "http://facebook.com"
-    pre = "<i class='fab fa-2x fa-facebook'></i>"
-
-[[menu.topbar]]
-    weight = 4
-    name = "Twitter"
-    url = "http://twitter.com"
-    pre = "<i class='fab fa-2x fa-twitter'></i>"
-
-[[menu.topbar]]
-    weight = 5
-    name = "Email"
-    url = "mailto:hello@universal.com"
-    pre = "<i class='fas fa-2x fa-envelope'></i>"
 
 [params]
     viewMorePostLink = "/projects/"
     author = "Graham Smith"
-    defaultKeywords = ["1", "2", "3"]
+    defaultKeywords = ["software", "AI", "IoT", "solopreneur", "Graham Smith"]
     mainSections = ["projects"]
     defaultDescription = "Graham Smith"
 
     # Social media
     facebook_site = "" # the Facebook handle of your site ('https://www.facebook.com/HANDLE')
-    twitter_site = "GoHugoIO" # the Twitter handle of your site (without the '@')
+    twitter_site = "" # the Twitter handle of your site (without the '@')
     default_sharing_image = "img/sharing-default.png"
 
     # Google Maps widget: If `googleMapsApiKey` is not set, no key will be passed to Google (which likely results in a broken map widget).
     enableGoogleMaps = false
-    googleMapsApiKey = "AIzaSyAv7Sza8NSp9_l_g8G2vlo0H4ydEPn_2jY"
+    googleMapsApiKey = ""
 
     latitude = "-12.043333"
     longitude = "-77.028333"
@@ -157,7 +134,7 @@ pluralizelisttitles = false
     googleRecaptchaKey = "site_key_for_google_recaptcha"
 
     about_us = "Built with <strong>Hugo</strong> | Copyright (c) 2022; all rights reserved."
-    copyright = "Copyright (c) 2015 - 2016, YourCompany; all rights reserved."
+    copyright = "Copyright (c) 2026, Graham Smith; all rights reserved."
 
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
@@ -228,33 +205,27 @@ pluralizelisttitles = false
     # For more information take a look at the README.
 
 [params.testimonials]
-    enable = true
-    # All testimonials are defined in their own files. You can find example items
-    # at 'exampleSite/data/testimonials'.
-    # For more information take a look at the README.
-    title = "Testimonials"
-    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+    enable = false
+    title = ""
+    subtitle = ""
 
 [params.see_more]
-    enable = true
-    icon = "far fa-file-alt"
-    title = "Do you want to see more?"
-    subtitle = "We have prepared for you more than 40 different HTML pages, including 5 variations of homepage."
+    enable = false
+    icon = ""
+    title = ""
+    subtitle = ""
     link_url = "#"
-    link_text = "Check other homepages"
+    link_text = ""
 
 [params.clients]
-    enable = true
-    # All clients are defined in their own files. You can find example items
-    # at 'exampleSite/data/clients'.
-    # For more information take a look at the README.
-    title = "Our Clients"
+    enable = false
+    title = ""
     subtitle = ""
 
 [params.recent_posts]
-    enable = true
-    title = "From our blog"
-    subtitle = "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo."
+    enable = false
+    title = "Recent Posts"
+    subtitle = ""
     hide_summary = false
 
 [params.footer.recent_posts]

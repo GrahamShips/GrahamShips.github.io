@@ -5,6 +5,8 @@ tags = ["flask", "postgres", "react-native"]
 categories = ["Software"]
 banner = "img/projects/vetted/map.jpg"
 authors = ["Graham Smith"]
+featured = true
+featured_description = "See recommendations only from people you actually trust."
 description = "A social media app where people can see recommendations and ratings from their actual connections - no spam, fake ratings, etc. Just people you trust."
 +++
 

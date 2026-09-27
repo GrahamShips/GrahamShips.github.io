@@ -1,0 +1,62 @@
+{{ if .Site.Data.homepage.featured_projects.enable }}
+<section class="bar background-white">
+    <div class="container">
+
+        <div class="col-md-12">
+            <div class="heading text-center">
+                <h2>{{ .Site.Data.homepage.featured_projects.title }}</h2>
+            </div>
+
+            {{ with .Site.Data.homepage.featured_projects.subtitle }}
+            <p class="lead text-center">{{ . | markdownify }}</p>
+            {{ end }}
+
+            <div class="row">
+                {{ $featured := where (where site.RegularPages "Section" "projects") ".Params.featured" true }}
+                {{ $featured = sort $featured ".Date" "desc" }}
+                {{ range first 3 $featured }}
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="box-image-text blog">
+                        <div class="top">
+                            <div class="image" style="overflow:hidden">
+                                {{ if isset .Params "banner" }}
+                                <img src="{{ .Params.banner | relURL }}" class="img-responsive" alt="{{ .Title }}">
+                                {{ else }}
+                                <img src="{{ "img/placeholder.png" | relURL }}" class="img-responsive" alt="{{ .Title }}">
+                                {{ end }}
+                            </div>
+                            <div class="bg"></div>
+                            <div class="text">
+                                <p class="buttons">
+                                    <a href="{{ .Permalink }}" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> View Project</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                            <p class="intro">{{ with .Params.featured_description }}{{ . }}{{ else }}{{ .Description }}{{ end }}</p>
+                            <p class="read-more">
+                                <a href="{{ .Permalink }}" class="btn btn-template-main">View Project</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+            <!-- /.row -->
+
+            {{ with .Site.Data.homepage.featured_projects.view_all_url }}
+            <div class="row">
+                <div class="col-md-12 text-center" style="margin-top: 20px;">
+                    <a href="{{ . }}" class="btn btn-template-main">
+                        {{ $.Site.Data.homepage.featured_projects.view_all_text | default "View All" }}
+                    </a>
+                </div>
+            </div>
+            {{ end }}
+
+        </div>
+    </div>
+</section>
+{{ end }}

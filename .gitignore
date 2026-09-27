@@ -1,1 +1,19 @@
 node_modules
+
+# added during PC migration
+.env
+.env.*
+!.env.example
+!.env.sample
+venv/
+.venv/
+venv1/
+localconnect-env/
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+.claude/settings.local.json
+.mcp.json
+public/
+resources/_gen/

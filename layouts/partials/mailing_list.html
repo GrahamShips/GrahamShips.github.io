@@ -1,0 +1,21 @@
+{{ if .Site.Data.homepage.mailing_list.enable }}
+<section class="bar background-gray no-mb">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <h2>{{ .Site.Data.homepage.mailing_list.title }}</h2>
+                <p class="lead">
+                    {{ .Site.Data.homepage.mailing_list.subtitle | safeHTML }}
+                </p>
+                <a href="{{ .Site.Data.homepage.mailing_list.URL }}"
+                   class="btn btn-template-main btn-lg"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <i class="fas fa-envelope"></i>
+                    {{ .Site.Data.homepage.mailing_list.btnText }}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

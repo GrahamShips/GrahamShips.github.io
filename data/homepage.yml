@@ -1,9 +1,9 @@
 # showcase
 showcase:
   enable: true
-  title: "Hello, I’m Graham."
-  //subtitle: "Aspiring Tech Entrepreneur"
-  description: "I work on products that I feel will make people's lives happier and healthier. I'm a product leader and engineer who's spent the last 9 years building hardware and software at the intersection of AI, IoT, and sustainability. After co-founding Babylon Micro-Farms and scaling it from prototype to global deployment, I'm now exploring ways to work with cutting edge AI research and products to make real-world, positive impact."
+  title: "Hello, I'm Graham."
+  # subtitle: "Aspiring Tech Entrepreneur"
+  description: 'I build software and tools at the intersection of AI, IoT, and sustainability. Currently shipping open source projects and exploring what''s possible with agentic AI. Previously CTO & Co-founder at <a href="/about/">Babylon Micro-Farms</a>.'
   image:
     alt: "Microfarm.jpg"
     # x: "img/showcase/showcase.png"
@@ -14,9 +14,9 @@ showcase:
     x: "img/showcase/microfarm.jpg"
 
   button:
-    icon: "icon-mail-fill"
-    btnText: "Contact"
-    URL: "./contact/"
+    icon: "icon-arrow-right"
+    btnText: "View Projects"
+    URL: "/projects/"
 
 #   socialLinks:
 #     - icon: "linkedin"
@@ -40,7 +40,7 @@ showcase:
 
 # about
 about:
-  enable: true
+  enable: false
   title: "Who am I?"
   content: '<p class="lead">
     When I''m not thinking about product strategy, I''m usually cooking Thai food, camping, planning the next trip, or tinkering with some side project. Check out the projects tab to see what I''ve been building lately.
@@ -64,7 +64,7 @@ about:
 
 # experience
 experience:
-  enable: true
+  enable: false
   title: "Experience"
   description: "Previously: Co-founder & CTO at Babylon Micro-Farms, where I led cross-functional teams across engineering, product, and manufacturing to deploy IoT-enabled vertical farms across 40+ states, 5 countries, and at sea. Forbes 30 Under 30. Secured and led $2M+ in NSF/DoD research grants developing computer vision and ML for precision agriculture. Biomedical Engineering, UVA."
   button:
@@ -89,3 +89,18 @@ experience:
       company: "Upperline Health"
       duration: "2016 - 2018"
 
+# featured projects
+featured_projects:
+  enable: true
+  title: "What I'm Building"
+  subtitle: "Software projects I'm currently working on."
+  view_all_text: "View All Projects"
+  view_all_url: "/projects/"
+
+# mailing list
+mailing_list:
+  enable: true
+  title: "Stay in the loop"
+  subtitle: "Get notified when I launch something new. No spam, just launches."
+  btnText: "Subscribe"
+  URL: "https://grahamships.beehiiv.com/subscribe"

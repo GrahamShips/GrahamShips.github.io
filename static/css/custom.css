@@ -5,6 +5,8 @@
   
   .box-image-text .image img {
     max-height: 190px;
+    width: 100%;
+    object-fit: cover;
     margin: auto;
   }
   
